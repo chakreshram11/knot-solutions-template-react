@@ -1,33 +1,18 @@
 import React from "react";
-import AnimationWrapper from "../components/AnimationWrapper ";
+import AnimationWrapper from "../components/AnimationWrapper";
 
 const stats = [
-  {    title: "Global Telecom Companies Served",
-    value: 40,
-    suffix: "+",
-  },
-  {
-    title: "Projects/Products Enabled",
-    value: 10000,
-    suffix: "+",
-  },
-  {
-    title: "Average OPEX Optimization",
-    value: 30,
-    suffix: "%",
-  },
-  {
-    title: "Outcomes Delivered",
-    value: 100,
-    suffix: "%",
-  },
+  { title: "Global Telecom Companies Served", value: 40, suffix: "+" },
+  { title: "Projects/Products Enabled", value: 10000, suffix: "+" },
+  { title: "Average OPEX Optimization", value: 30, suffix: "%" },
+  { title: "Outcomes Delivered", value: 100, suffix: "%" },
 ];
 
 const Home = () => {
   return (
     <>
       {/* Hero Section */}
-      <div className="relative pl-28 pr-28">
+      <div className="relative pl-6 pr-6 md:pl-28 md:pr-28">
         {/* Background video */}
         <div className="absolute inset-0 overflow-hidden">
           <video
@@ -43,19 +28,19 @@ const Home = () => {
 
         {/* Hero Content */}
         <div className="relative container mx-auto flex flex-col text-white py-20 px-4 md:pt-56">
-          <h3 className="text-2xl md:text-3xl font-bold mb-4">
+          <h3 className="text-2xl md:text-3xl font-bold mb-4 text-center md:text-left">
             Discover A World Beyond Transformation.
           </h3>
-          <h2 className="text-2xl md:text-3xl font-medium mb-6">
+          <h2 className="text-2xl md:text-3xl font-medium mb-6 text-center md:text-left">
             Delivering Business Outcomes For A Competitive Edge!
           </h2>
-          <p className="text-lg md:text-xl mb-8">
+          <p className="text-lg md:text-xl mb-8 text-center md:text-left">
             5G | Decision Analytics | IoT & Telematics | Cloud | Digital BSS |
             RPA | OmniChannel
           </p>
           <a
             href="https://knotsolutions.com/contact-us/"
-            className="bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-lg text-lg font-medium transition-all"
+            className="bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-lg text-lg font-medium transition-all block mx-auto md:mx-0"
           >
             Talk to an expert to know more
           </a>
@@ -63,9 +48,9 @@ const Home = () => {
       </div>
 
       {/* Stats Section */}
-      <section className="py-12 pl-28 pr-28 bg-red-600">
+      <section className="py-12 pl-6 pr-6 md:pl-28 md:pr-28 bg-red-600">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
             {stats.map((stat, index) => (
               <div
                 key={index}
@@ -89,11 +74,11 @@ const Home = () => {
         </div>
       </section>
 
- {/* Digital Readiness Section */}
- <main id="content" className="neve-main">
-        <section className="flex flex-wrap justify-between items-center px-6 py-12 pr-28 pl-28 bg-gray-100">
+      {/* Digital Readiness Section */}
+      <main id="content" className="neve-main">
+        <section className="flex flex-wrap justify-between items-center px-6 py-12 md:py-16 md:px-28 bg-gray-100">
           {/* Left Column - Video */}
-          <div className="w-full lg:w-1/2 ">
+          <div className="w-full lg:w-1/2 mb-8 lg:mb-0">
             <AnimationWrapper animation="fadeInLeft" delay="0.5s">
               <div className="aspect-w-16 aspect-h-9 p-9">
                 <iframe
@@ -177,6 +162,5 @@ const Home = () => {
     </>
   );
 };
-
 
 export default Home;
