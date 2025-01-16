@@ -5,6 +5,7 @@ module.exports = {
       animation: {
         fadeInLeft: "fadeInLeft 1s ease-in-out",
         fadeInRight: "fadeInRight 1s ease-in-out",
+        fadeUp: 'fadeUp 2s ease-out',
       },
       keyframes: {
         fadeInLeft: {
@@ -14,6 +15,10 @@ module.exports = {
         fadeInRight: {
           "0%": { opacity: 0, transform: "translateX(50px)" },
           "100%": { opacity: 1, transform: "translateX(0)" },
+        },
+        fadeUp: {
+          '0%': { opacity: '0', transform: 'translateY(20px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
         },
       },
     },

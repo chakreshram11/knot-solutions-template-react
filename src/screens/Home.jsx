@@ -1,5 +1,4 @@
 import React from "react";
-import AnimationWrapper from "../components/AnimationWrapper";
 
 const stats = [
   { title: "Global Telecom Companies Served", value: 40, suffix: "+" },
@@ -82,11 +81,11 @@ const Home = () => {
       </section>
 
       {/* Digital Readiness Section */}
-      <main id="content" className="neve-main">
+      <div id="content" className="neve-main">
         <section className="flex flex-wrap justify-between items-center px-6 py-12 md:py-16 md:px-28 bg-gray-100">
           {/* Left Column - Video */}
           <div className="w-full lg:w-1/2 mb-8 lg:mb-0">
-            <AnimationWrapper animation="fadeInLeft" delay="0.5s">
+            <div className="animate-fadeInLeft" style={{ animationDelay: "1s" }}>
               <div className="aspect-w-16 aspect-h-9 p-9">
                 <iframe
                   className="w-full h-full rounded-lg shadow-md"
@@ -96,12 +95,12 @@ const Home = () => {
                   allowFullScreen
                 />
               </div>
-            </AnimationWrapper>
+            </div>
           </div>
 
           {/* Right Column - Text Content */}
           <div className="w-full lg:w-1/2">
-            <AnimationWrapper animation="fadeInRight" delay="1s">
+            <div className="animate-fadeInRight" style={{ animationDelay: "1s" }}>
               <div className="space-y-4 p-9">
                 <h4 className="text-2xl font-bold text-gray-800">
                   Discover Digital Readiness for a Competitive Advantage
@@ -137,35 +136,17 @@ const Home = () => {
                   </a>
                 </div>
               </div>
-            </AnimationWrapper>
+            </div>
           </div>
         </section>
-      </main>
+      </div>
+      <div className="bg-gray-200 text-center text-4xl p-4 sm:text-3xl md:text-4xl lg:text-5xl">
+        <div className="animate-fadeUp font-sans">
+        <span className="text-red-500">Industry offerings</span> aligned to address all your challenges
+        </div>
+      </div>
 
-      {/* Keyframe Animations */}
-      <style jsx>{`
-        @keyframes fadeInLeft {
-          from {
-            transform: translateX(-100%);
-            opacity: 0;
-          }
-          to {
-            transform: translateX(0);
-            opacity: 1;
-          }
-        }
 
-        @keyframes fadeInRight {
-          from {
-            transform: translateX(100%);
-            opacity: 0;
-          }
-          to {
-            transform: translateX(0);
-            opacity: 1;
-          }
-        }
-      `}</style>
     </>
   );
 };
