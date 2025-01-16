@@ -39,8 +39,8 @@ const Home = () => {
             RPA | OmniChannel
           </p>
           <a
-            href="https://knotsolutions.com/contact-us/"
-            className="bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-lg text-lg font-medium transition-all block mx-auto md:mx-0"
+            href="/contact-us"
+            className="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 sm:py-2 sm:px-6 md:py-3 md:px-8 rounded-lg text-sm sm:text-base md:text-lg font-medium transition-all block mx-auto md:mx-0 w-full sm:w-64 md:w-52"
           >
             Talk to an expert to know more
           </a>
@@ -70,6 +70,13 @@ const Home = () => {
                 </p>
               </div>
             ))}
+          </div>
+          <div className="text-center px-4 sm:px-6 lg:px-8 py-6">
+            <p className="text-white font-bold text-lg sm:text-xl lg:text-2xl leading-relaxed sm:leading-relaxed lg:leading-relaxed">
+              We help leading global Telco majors, monetize their internal assets, 
+              build new revenue streams, and effectively deploy applications with 
+              technology and infrastructure.
+            </p>
           </div>
         </div>
       </section>

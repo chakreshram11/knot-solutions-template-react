@@ -51,12 +51,12 @@ const AnimationWrapper = ({ animation, children, delay }) => {
         }
 
         .animation-wrapper {
-          animation: ${({ animation, delay }) => `${animation} 1s ease-out ${delay || "0s"} forwards`};
+          animation: ${animation} 1s ease-out ${delay || "0s"} forwards;
         }
       `}</style>
 
       {/* Wrap the children with the animation class */}
-      <div className={`animation-wrapper`}>
+      <div className="animation-wrapper">
         {children}
       </div>
     </>
