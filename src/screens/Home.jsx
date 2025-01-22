@@ -4,6 +4,7 @@ import Revenue from "../assets/Revenue-Streams-2-1.png";
 import ProductImage from "../assets/Products.png";
 import SolutionsImage from "../assets/Solutions.png";
 import ServicesImage from "../assets/Services.png";
+import { Link } from "react-router-dom";
 
 
 const stats = [
@@ -111,65 +112,66 @@ const Home = () => {
       </section>
 
       {/* Digital Readiness Section */}
-      <div className=" bg-gray-100">
-        <section className="flex flex-wrap justify-between items-center p-11 pl-64 pr-64">
-          {/* Left Column - Video */}
-          <div className="w-full lg:w-1/2 mb-8 lg:mb-0">
-            <div className="animate-fadeInLeft" style={{ animationDelay: "1s" }}>
-              <div className="aspect-w-16 aspect-h-9 p-9">
-                <iframe
-                  className="w-full h-96 rounded-lg shadow-md"
-                  src="https://www.youtube.com/embed/cxH3vQKWep8"
-                  title="Digital Readiness Video"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                />
-              </div>
-            </div>
-          </div>
-
-          {/* Right Column - Text Content */}
-          <div className="w-full lg:w-1/2">
-            <div className="animate-fadeInRight" style={{ animationDelay: "1s" }}>
-              <div className="space-y-4 p-9">
-                <h4 className="text-2xl font-bold text-gray-800">
-                  Discover Digital Readiness for a Competitive Advantage
-                </h4>
-                <p className="text-gray-600">
-                  From enablement to transformation, we enable global Telecom
-                  Service Providers to transform and address digital readiness,
-                  ensure lower op costs, drive efficiencies through process
-                  automation, and deliver business agility for new offerings and
-                  business opportunities.
-                </p>
-                <p className="text-gray-600">
-                  Know more about how Knot Solutions™ can help you with your
-                  current challenges to get you the much-needed competitive edge.
-                </p>
-
-                {/* Links Section */}
-                <div className="flex items-center space-x-4">
-                  <a
-                    href="https://knotsolutions.com/wp-content/uploads/2022/07/Business-Brochure_Changes-Updated.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-500 hover:underline"
-                  >
-                    Download e-Brochure
-                  </a>
-                  <span className="text-gray-400">|</span>
-                  <a
-                    href="https://knotsolutions.com/contact-us/"
-                    className="text-blue-500 hover:underline"
-                  >
-                    Talk to an Expert
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+      <div className="bg-gray-100">
+  <section className="flex flex-wrap justify-between items-center p-6 lg:p-11 lg:pl-64 lg:pr-64">
+    {/* Left Column - Video */}
+    <div className="w-full lg:w-1/2 mb-8 lg:mb-0">
+      <div className="animate-fadeInLeft" style={{ animationDelay: "1s" }}>
+        <div className="aspect-w-16 aspect-h-9 p-6 lg:p-9">
+          <iframe
+            className="w-full h-96 rounded-lg shadow-md"
+            src="https://www.youtube.com/embed/cxH3vQKWep8"
+            title="Digital Readiness Video"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          />
+        </div>
       </div>
+    </div>
+
+    {/* Right Column - Text Content */}
+    <div className="w-full lg:w-1/2">
+      <div className="animate-fadeInRight" style={{ animationDelay: "1s" }}>
+        <div className="space-y-4 p-6 lg:p-9">
+          <h4 className="text-2xl font-bold text-gray-800">
+            Discover Digital Readiness for a Competitive Advantage
+          </h4>
+          <p className="text-gray-600">
+            From enablement to transformation, we enable global Telecom
+            Service Providers to transform and address digital readiness,
+            ensure lower op costs, drive efficiencies through process
+            automation, and deliver business agility for new offerings and
+            business opportunities.
+          </p>
+          <p className="text-gray-600">
+            Know more about how Knot Solutions™ can help you with your
+            current challenges to get you the much-needed competitive edge.
+          </p>
+
+          {/* Links Section */}
+          <div className="flex items-center space-x-4">
+            <a
+              href="https://knotsolutions.com/wp-content/uploads/2022/07/Business-Brochure_Changes-Updated.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-500 hover:underline"
+            >
+              Download e-Brochure
+            </a>
+            <span className="text-gray-400">|</span>
+            <a
+              href="https://knotsolutions.com/contact-us/"
+              className="text-blue-500 hover:underline"
+            >
+              Talk to an Expert
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
 
       <div className="bg-gray-200 text-center text-4xl p-4 sm:text-3xl md:text-4xl lg:text-5xl">
         <div className="animate-fadeUp font-sans">
@@ -178,8 +180,8 @@ const Home = () => {
       </div>
 
       {/* cards  */}
-      <div className="bg-gray-200">
-      <div className="flex flex-wrap justify-center gap-8 p-8 animate-fadeUp font-sans">
+      <div className="bg-gray-200 ">
+      <div className="flex flex-wrap justify-center gap-8 p-8 lg:p-11 lg:pl-64 lg:pr-64 animate-fadeUp font-sans">
       {cards.map((card, index) => (
         <Card
           key={index}
@@ -192,64 +194,47 @@ const Home = () => {
     </div>
     </div>
     
-    <div className=" bg-gray-100">
-        <section className="flex flex-wrap justify-between items-center p-11 pl-64 pr-64">
-          {/* Left Column - Video */}
-          <div className="w-full lg:w-1/2 mb-8 lg:mb-0">
-            <div className="animate-fadeInLeft" style={{ animationDelay: "1s" }}>
-              <div className="space-y-4 p-9">
-                <h4 className="text-2xl font-bold text-gray-800">
-                <span className="text-red-600">Enable New</span><br/>
+    <div className="bg-gray-100">
+      <section className="flex flex-wrap justify-between items-center p-6 lg:p-11 lg:pl-64 lg:pr-64">
+        {/* Left Column - Video */}
+        <div className="w-full lg:w-1/2 mb-8 lg:mb-0">
+          <div className="animate-fadeInLeft" style={{ animationDelay: "1s" }}>
+            <div className="space-y-4 px-6 md:px-9">
+              <h4 className="text-2xl font-bold text-gray-800">
+                <span className="text-red-600">Enable New</span><br />
                 Revenue Streams
-                </h4>
-                <p className="text-gray-600">
-                  From enablement to transformation, we enable global Telecom
-                  Service Providers to transform and address digital readiness,
-                  ensure lower op costs, drive efficiencies through process
-                  automation, and deliver business agility for new offerings and
-                  business opportunities.
-                </p>
-                <p className="text-gray-600">
-                  Know more about how Knot Solutions™ can help you with your
-                  current challenges to get you the much-needed competitive edge.
-                </p>
+              </h4>
+              <p className="text-gray-600">
+                Beyond Connectivity. Leverage emerging Telematics opportunities in a connected world.
+              </p>
+              <p className="text-gray-600">
+                Leverage Decision Intelligence to leverage opportunities in Telematics 4.0! Ensure readiness of business-critical support systems that address a wider set of Vehicle-centric services catering to telematics, which include a user interface, network adaptability, interoperability along with bill integration and invoicing, service provisioning, device management, data analytics, and customer support.
+              </p>
 
-                {/* Links Section */}
-                <div className="flex items-center space-x-4">
-                  <a
-                    href="https://knotsolutions.com/wp-content/uploads/2022/07/Business-Brochure_Changes-Updated.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-500 hover:underline"
-                  >
-                    Download e-Brochure
-                  </a>
-                  <span className="text-gray-400">|</span>
-                  <a
-                    href="https://knotsolutions.com/contact-us/"
-                    className="text-blue-500 hover:underline"
-                  >
-                    Talk to an Expert
-                  </a>
-                </div>
-              </div>
+              <Link
+                to="/contact-us"
+                className="inline-block bg-blue-500 text-white py-2 px-6 rounded-full hover:bg-blue-600 transition-colors"
+              >
+                Talk to Expert
+              </Link>
             </div>
           </div>
+        </div>
 
-          {/* Right Column - Text Content */}
-          <div className="w-full lg:w-1/2">
-            <div className="animate-fadeInRight" style={{ animationDelay: "1s" }}>
-              <div className="aspect-w-16 aspect-h-9 p-6 md:p-9">
-                <img
-                  className="w-full h-auto rounded-lg shadow-md object-cover"
-                  src={Revenue} 
-                  alt="Digital Readiness"
-                />
-              </div>
+        {/* Right Column - Text Content */}
+        <div className="w-full lg:w-1/2">
+          <div className="animate-fadeInRight" style={{ animationDelay: "1s" }}>
+            <div className="aspect-w-16 aspect-h-9 px-6 md:px-9">
+              <img
+                className="w-full h-auto rounded-lg shadow-md object-cover"
+                src={Revenue}
+                alt="Digital Readiness"
+              />
             </div>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
+    </div>
 
     </>
   );

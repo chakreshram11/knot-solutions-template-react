@@ -109,16 +109,6 @@ const Header = () => {
               </li>
             </ul>
           </nav>
-
-          {/* Contact Button for Larger Screens */}
-          <div className="hidden lg:block">
-            <Link
-              to="/contact-us"
-              className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
-            >
-              Contact Us
-            </Link>
-          </div>
         </div>
       </div>
     </header>
