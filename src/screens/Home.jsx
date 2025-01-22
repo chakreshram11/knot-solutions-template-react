@@ -1,10 +1,39 @@
 import React from "react";
+import Card from "../components/Cards";
+import ProductImage from "../assets/Products.png"
+import SolutionsImage from "../assets/Solutions.png";
+import ServicesImage from "../assets/Services.png";
+
 
 const stats = [
   { title: "Global Telecom Companies Served", value: 40, suffix: "+" },
   { title: "Projects/Products Enabled", value: 10000, suffix: "+" },
   { title: "Average OPEX Optimization", value: 30, suffix: "%" },
   { title: "Outcomes Delivered", value: 100, suffix: "%" },
+];
+
+const cards = [
+  {
+    image: ProductImage,
+    title: "Products",
+    description:
+      "Rapidly migrate, extend, and modernize with our cloud-native BSS digital stack to quickly scale business lines and go-to-market operations.",
+    link:"/products",
+  },
+  {
+    image: SolutionsImage,
+    title: "Solutions",
+    description:
+      "Build digital and monetizing capabilities around the core and edge by effectively deploying applications, technology, and infrastructure.",
+    link:"/solutions",
+  },
+  {
+    image: ServicesImage,
+    title: "Services",
+    description:
+      "Comprehensive services orchestration from enablement to transformation aligned to growth and business outcomes.",
+    link: "/services",
+  },
 ];
 
 const Home = () => {
@@ -146,6 +175,21 @@ const Home = () => {
         </div>
       </div>
 
+      {/* cards  */}
+      <div className="bg-gray-200">
+      <div className="flex flex-wrap justify-center gap-8 p-8 animate-fadeUp font-sans">
+      {cards.map((card, index) => (
+        <Card
+          key={index}
+          image={card.image}
+          title={card.title}
+          description={card.description}
+          link={card.link}
+        />
+      ))}
+    </div>
+    </div>
+      
 
     </>
   );

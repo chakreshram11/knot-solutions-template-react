@@ -40,7 +40,7 @@ export default function Footer() {
 
   return (
     <>
-      <footer className="bg-gray-200 text-black py-8 pl-28 pr-28">
+      <footer className="bg-gray-50 text-black py-8 pl-28 pr-28">
         <div className="container mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center text-center md:text-left">
             <div className="md:w-6/12 mb-6 md:mb-0">
