@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import logo from "../assets/logo-mobile.svg";
 
 const Header = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -12,7 +13,7 @@ const Header = () => {
           <div className="flex-shrink-0">
             <Link to="/">
               <img
-                src="https://knotsolutions.com/wp-content/uploads/2022/07/Knot-Solutions-logo-1024x362.png"
+                src={logo}
                 alt="Knot Solutions Logo"
                 className="h-12 sm:h-16"
               />

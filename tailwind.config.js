@@ -9,12 +9,12 @@ module.exports = {
       },
       keyframes: {
         fadeInLeft: {
-          "0%": { opacity: 0, transform: "translateX(-50px)" },
-          "100%": { opacity: 1, transform: "translateX(0)" },
+          "0%": { transform: "translateX(-100px)", opacity: "0" },
+          "100%": { transform: "translateX(0)", opacity: "1" },
         },
         fadeInRight: {
-          "0%": { opacity: 0, transform: "translateX(50px)" },
-          "100%": { opacity: 1, transform: "translateX(0)" },
+          "0%": { transform: "translateX(100px)", opacity: "0" },
+          "100%": { transform: "translateX(0)", opacity: "1" },
         },
         fadeUp: {
           '0%': { opacity: '0', transform: 'translateY(20px)' },
