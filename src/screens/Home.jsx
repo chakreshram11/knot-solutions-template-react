@@ -181,18 +181,18 @@ const Home = () => {
 
       {/* cards  */}
       <div className="bg-gray-200 ">
-      <div className="flex flex-wrap justify-center gap-8 p-8 lg:p-11 lg:pl-64 lg:pr-64 animate-fadeUp font-sans">
-      {cards.map((card, index) => (
-        <Card
-          key={index}
-          image={card.image}
-          title={card.title}
-          description={card.description}
-          link={card.link}
-        />
-      ))}
-    </div>
-    </div>
+        <div className="flex flex-wrap justify-center gap-8 p-8 lg:p-11 lg:pl-64 lg:pr-64 animate-fadeUp font-sans">
+        {cards.map((card, index) => (
+          <Card
+            key={index}
+            image={card.image}
+            title={card.title}
+            description={card.description}
+            link={card.link}
+          />
+          ))}
+        </div>
+      </div>
     
     <div className="bg-gray-100">
       <section className="flex flex-wrap justify-between items-center p-6 lg:p-11 lg:pl-64 lg:pr-64">
